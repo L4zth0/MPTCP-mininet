@@ -10,6 +10,9 @@ This enables interesting functionalities to built networking/cloud testbeds. The
 
 Run containernet 
 
+      ```
+      sudo docker run -v /Home/Documents/configuration:/mnt --name containernet -it --rm --privileged --pid='host' --network host -v /var/run/docker.sock:/var/run/docker.sock containernet/containernet /bin/bash
+      ```
       sudo docker run -v /Home/Documents/configuration:/mnt --name containernet -it --rm --privileged --pid='host' -v /var/run/docker.sock:/var/run/docker.sock containernet/containernet /bin/bash
 
 Copy the network configuration on the currently running 
